@@ -99,21 +99,28 @@ Your Task
 After familiarizing yourself with the code:
 
 Implement a __str__() instance method. Try making an instance of Zombie and printing it to make sure it works.
+
 Currently zombies have just one attribute: speed. We want to add strength as a second attribute.
 There should be a max_strength class variable set to 8. This value won't change.
 There should be a defaul_strength class variable set to 3. This value won't change.
 __init__() should initialize the zombie's strength as well as speed. Strength should be accepted as another argument, but if the value passed in is greater than the maximum strength, the default strength should be used instead. (Hint: see how __init__ deals with speed.)
 Update the doc string to reflect this new feature
+
 Define a new instance method fight. Whereas chase() represents you trying to outrun a zombie, fight represents what happens when you try to fight a zombie.
 Use Zombie.max_strength to generate a random number that represents how well you are able to fight off this zombie. This method should return True if your strength is greater than the zombie's and False otherwise.
+
 Write a docstring explaining what this method does (see the other method's docstrings for inspiration).
+
 We currently have an instance method encounter that represents you coming across a zombie and trying to run away. Right now there are 2 possible outcomes: you can either run away or get caught and die. We want to add fighting the zombie off as a third possible outcome:
+
 You should only try to fight the zombie if you don't outrun it.
 If you don't manage to outrun the zombie, call our new fight() method to try to fight it off.
 If you lose the fight, you still die.
 If you win the fight, you survive, BUT in the process you catch the zombie plague. Instantiate a new zombie object (that's you!) and add it to Zombie.horde.
+
 Make sure encounter always returns a string summarizing what happens (e.g. "You are now a zombie. Raawwwrghh").
 Update the docstring to reflect this new functionality.
+
 Define a new class method increase_plague_level:
 This class method should generate a random number between 0 and 2 and increase Zombie.plague_level by that amount.
 Update the docstring to reflect this change in functionality.
