@@ -7,7 +7,7 @@ class Zombie:
     plague_level = 10
     default_speed = 1
     default_strength = 3
-
+#TEST TEST TEST
     def __init__(self, speed, strength):
         """Initializes zombie's speed and zombies strength
         """
